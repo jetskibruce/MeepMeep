@@ -39,11 +39,11 @@ dependencies {
 
     // Use the Kotlin JDK 8 standard library.
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+    implementation(project(mapOf("path" to ":libs:road-runner")))
 
     // Use the Kotlin test library.
     testImplementation("org.jetbrains.kotlin:kotlin-test")
 
-    api("com.acmerobotics.roadrunner:core:0.5.5")
 }
 
 sourceSets["main"].java {
